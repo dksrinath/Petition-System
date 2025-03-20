@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  .login-page {
+    background: linear-gradient(135deg, #007bff 0%, #00c4cc 100%);
+  }
+  
+  .dashboard-page {
+    background-color: #f5f7fa;
+  }
+  
+  /* Login Card */
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    background: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .login-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .primary-icon {
+    font-size: 2.5rem;
+    color: #007bff;
+  }
+  
+  .brand-text {
+    font-weight: 700;
+    color: #007bff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatar-circle {
+    width: 32px;
+    height: 32px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .avatar-circle.large {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+  
+  /* Notification Icon */
+  .notification-icon {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .notification-icon i {
+    font-size: 1.25rem;
+    color: #6c757d;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    min-width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Stats Cards */
+  .stats-card {
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .stats-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+  }
+  
+  .stats-info h5 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .stats-info p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Petition Card */
+  .petition-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .petition-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .card-header div {
+    font-weight: 600;
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 10px 15px; /* Adjust padding to fit text */
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: visible; /* Ensure text is visible */
+}
+
+  
+  .status-badge.pending {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .status-badge.progress {
+    background-color: #007bff;  
+    color: white;
+    width: auto;     /* Added to ensure proper width */
+    overflow: visible; /* Added to prevent text cutoff */
+  }
+  
+  .status-badge.resolved {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .priority-urgent {
+    border-left: 4px solid #dc3545;
+  }
+  
+  .priority-high {
+    border-left: 4px solid #ffc107;
+  }
+  
+  .priority-normal {
+    border-left: 4px solid #28a745;
+  }
+  
+  .petition-info div {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .petition-footer {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+  }
+  
+  .petition-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+  
+  /* Comments */
+  .comment-item {
+    padding: 10px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  .comment-author {
+    font-weight: 600;
+  }
+  
+  .comment-date {
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .stats-card {
+      padding: 10px;
+    }
+    
+    .stats-icon {
+      font-size: 1.5rem;
+    }
+    
+    .stats-info h5 {
+      font-size: 1.2rem;
+    }
+    
+    .petition-card {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .status-badge {
+      min-width: 80px;
+      font-size: 0.75rem;
+      padding: 4px 8px;
+    }
+    
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .card-header div {
+      margin-bottom: 5px;
+    }
+  }
