@@ -148,31 +148,36 @@ body {
   
   .status-badge {
     display: inline-block;
-    padding: 10px 15px; /* Adjust padding to fit text */
+    padding: 10px 15px; 
     border-radius: 12px;
     font-size: 14px;
     font-weight: bold;
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: visible; /* Ensure text is visible */
+    white-space: nowrap; 
 }
 
-  
-  .status-badge.pending {
+.status-badge.pending {
     background-color: #ffc107;
     color: #333;
-  }
-  
-  .status-badge.progress {
-    background-color: #007bff;  
+    height: auto !important;
+    min-width: fit-content; 
+    padding: 10px 15px; 
+}
+
+.status-badge.progress {
+    background-color: #007bff;
     color: white;
-    width: auto;     /* Added to ensure proper width */
-    overflow: visible; /* Added to prevent text cutoff */
-  }
-  
-  .status-badge.resolved {
+    height: auto !important;
+    min-width: fit-content; 
+    padding: 10px 15px; 
+}
+
+.status-badge.resolved {
     background-color: #28a745;
     color: white;
-  }
+    height: auto !important;
+    min-width: fit-content; 
+    padding: 10px 15px; 
+}
   
   .priority-urgent {
     border-left: 4px solid #dc3545;
